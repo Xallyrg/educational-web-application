@@ -65,18 +65,18 @@
       <div class="col-md-6">
         <div class="form-card">
 
-          <form>
+          <form method="post" action="/contacts">
             <div class="mb-3">
               <label for="name" class="form-label">Имя</label>
-              <input type="text" class="form-control" id="name" placeholder="Введите ваше имя">
+              <input type="text" class="form-control" id="name" name="name" placeholder="Введите ваше имя">
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="Введите email">
+              <input type="email" class="form-control" id="email" name="email" placeholder="Введите email">
             </div>
             <div class="mb-3">
               <label for="message" class="form-label">Сообщение</label>
-              <textarea class="form-control" id="message" rows="4" placeholder="Ваше сообщение"></textarea>
+              <textarea class="form-control" id="message" name="message" rows="4" placeholder="Ваше сообщение"></textarea>
             </div>
             <button type="submit" class="btn btn-primary w-100">Отправить</button>
           </form>
